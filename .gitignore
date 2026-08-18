@@ -1,0 +1,4 @@
+package-lock.json
+.turbopack
+dist
+node_modules

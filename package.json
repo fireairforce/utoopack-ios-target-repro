@@ -1,0 +1,11 @@
+{
+  "name": "utoo-ios9-target-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "dependencies": {
+    "@utoo/pack": "1.5.6"
+  }
+}
