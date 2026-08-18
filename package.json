@@ -3,9 +3,15 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "node build.mjs"
+    "build": "node build.mjs",
+    "check:dist": "es-check checkBrowser \"dist/**/*.js\" --browserslistQuery=\"ios >= 9\" --noCache",
+    "pretest": "npm run build",
+    "test": "npm run check:dist"
   },
   "dependencies": {
     "@utoo/pack": "1.5.7-alpha.0"
+  },
+  "devDependencies": {
+    "es-check": "9.6.4"
   }
 }
