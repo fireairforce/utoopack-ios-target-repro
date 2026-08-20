@@ -4,7 +4,7 @@ await build(
   {
     config: {
       mode: "production",
-      target: "ios >= 9",
+      target: "ios >= 8",
       entry: [{ import: "./src/index.js", name: "main" }],
       output: {
         path: "./dist",
